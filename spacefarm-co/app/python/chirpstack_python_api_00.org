@@ -1,0 +1,11 @@
+
+#+BEGIN_SRC python :session : results raw drawer
+  %matplotlib inline
+  import matplotlib.pyplot as plt
+  import numpy as np
+
+  print('hi org')
+#+END_SRC
+
+#+RESULTS:
+
