@@ -1,5 +1,5 @@
 import-lorawan-devices:
-	docker compose run -e RUST_BACKTRAC=1 -v $(pwd)/ssh:.ssh --rm --entrypoint sh --user root chirpstack -c '\
+	docker compose run -e RUST_BACKTRAC=1 --rm --entrypoint sh --user root chirpstack -c '\
 		apk add --no-cache git && \
 		eval $(ssh-agent -s) && \
 		ssh-add ~/.ssh/sooksook-edge-id-rsa && \
